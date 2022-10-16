@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;400&display=swap');
+*{
+    font-family: 'Prompt', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(254, 195, 77);
+    background-color: rgb(255, 209, 125);
+    background-image: linear-gradient(to left, rgb(254, 195, 77) ,  rgb(238, 150, 63));
+    margin: 10%;
+    
+}
+
+#logo{
+    align-items: flex-end;
+}
+
+#top{
+    width: 25%;
+    padding: 2em;
+    align-items: flex-start;
+    color: white;
+    
+}
+
+#intro{
+    padding-left: 2em;
+    padding-right: 45em;
+    padding-bottom: 2em;
+    color: white;
+    padding-top: 0em;
+    letter-spacing: 1px;
+}
+
+h1, h2 {
+    backdrop-filter: blur(10px);
+    letter-spacing: 5px;
+}
+
+img {
+    max-width: 80%;  
+    height: auto;   
+    align-items: center;    
+}
+
+#stripes{
+    width: 20%;  
+    align-items: center;
+    margin: 0;
+}
+
+input {
+    width: 75%;
+    margin-right: 10;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    opacity: 0.8;
+    border-radius: 18px;
+    letter-spacing: 2px;
+}
+
+.add {
+    width: 25%;
+    padding: 10px;
+    margin-left: 0;
+    background: rgb(121, 142, 198);
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: normal;
+    border-radius: 18px;
+    letter-spacing: 2px;
+}
+
+.add:hover {
+    background-color: rgb(147, 166, 223);
+    color: #FFF;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 14px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    content: "";
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
